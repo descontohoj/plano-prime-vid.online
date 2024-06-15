@@ -360,15 +360,15 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script src="https://c2.cdn1tp.net/b6c3fc4fbcac4c368cd008abf1c0162c/js/elements-handlers.min_ver%253D3.16.0.js" id="pro-elements-handlers-js"></script>
 	
 
-
-                    <script async="true" src="https://c1.cdn1tp.net/ghelper/googletagmanager.js"></script>
-                    window.onload = function () {
+<script>
+    window.onload = function () {
         var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i &lt; n; i++) {
+        for (var i = 0, n = links.length; i < n; i++) {
             var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") &gt; 0 ? '&amp;' : '?') +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
                     document.location.search.replace('?', '').toString();
             links[i].href = href;
         }
     }
+</script>
 </body></html>
